@@ -1,0 +1,371 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5d4f4f;
+    color: #333;
+}
+
+
+header {
+    background-color: #645e5d;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #706143;  
+    z-index: 1000;  
+    display: flex;
+    justify-content: center; 
+    padding: 15px 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 20px; 
+    transition: color 0.3s ease;
+}
+
+
+nav a:hover {
+    color: #333;
+}
+
+nav a:active {
+    color: #939393;
+}
+
+#hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('kim1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#hero h1 {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    max-width: 700px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#hero .cta-button {
+    background-color: #919291;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .cta-button:hover {
+    background-color: #000000;
+}
+
+#about {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 48px;
+    color: hsl(0, 0%, 30%);
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+#about .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+#about .content img {
+    border-radius: 1%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 5px solid hsl(0, 0%, 30%);
+}
+
+#about .content .bio {
+    max-width: 600px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+}
+
+
+#projects {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 48px;
+    color: hsl(0, 0%, 30%);
+    margin-bottom: 20px;
+}
+
+#projects .project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 2px solid hsl(0, 0%, 30%);
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.project-card a {
+    font-size: 16px;
+    color: hsl(0, 0%, 30%);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #333;
+}
+
+#skills, #experience {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-container, .experience-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-card, .experience-card {
+    background-color: #fff;
+    border: 2px solid hsl(0, 0%, 30%);
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.skill-card:hover, .experience-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card img, .experience-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.skill-card h3, .experience-card h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.skill-card p, .experience-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Contact Page Styles */
+#contact {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contacts-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 48px;
+    color: hsl(0, 0%, 30%);
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: hsl(0, 0%, 30%);
+}
+
+
+.social-media {
+    margin-top: 40px;
+
+}
+
+.social-media h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin: 10px 0;
+    
+}
+
+.social-media ul li a {
+    font-size: 18px;
+    color:hsl(0, 0%, 30%);
+    text-decoration: none;
+    transition: color 0.3s ease;
+   
+}
+
+.social-media ul li a:hover {
+    color: #333;
+}
+
+
+footer {
+    background-color: #898989;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
